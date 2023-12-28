@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# $HOME/.config/i3/config will execute this file when called.
+
+# NOTE: This is not elegant, but it's the only way I can think of atm to source a
+# local script ONLY WHEN an X server starts (i3). YADM has its own way of
+# having different builds but this feels safer.
+
+if [ -f "$HOME/.local/.profile" ] ; then
+    . "$HOME/.local/.profile"
+fi
