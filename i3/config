@@ -35,6 +35,8 @@ bindsym $mod+q kill
 
 bindsym $mod+d exec dmenu_run
 
+bindsym $mod+x move workspace to output next
+
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
